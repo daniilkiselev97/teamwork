@@ -1,0 +1,12 @@
+mixin comment(img, name, data , decrsiption )
+    .comment 
+        .comment__img 
+            img(src="./../img/comment/" + img, alt="Комментарий")
+        .comment__wrapper 
+            .comment__main-info 
+                .comment__name
+                    h4 #{name}
+                .comment__date
+                    span #{data}
+            .comment__description 
+                p #{decrsiption}

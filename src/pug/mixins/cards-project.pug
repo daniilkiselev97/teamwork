@@ -1,0 +1,10 @@
+mixin cards-project( img, info, link='#', title )
+    .card-project
+        .card-project__img
+            .card-frame
+                +cards-frame(title)
+            a(href=link)
+                img(src="./../img/project-cards/" + img, alt="Проект")
+        .card-post__info 
+            p #{info}
+    

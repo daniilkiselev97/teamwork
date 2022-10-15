@@ -1,0 +1,9 @@
+mixin cards-post( img, info, link='#' )
+    .card-post
+        .card-post-img 
+            a(href=link)
+                img(src="./../img/post-cards/" + img, alt="Пост")
+        .card-post__info 
+            p #{info}
+
+

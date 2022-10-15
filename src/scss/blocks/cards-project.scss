@@ -1,0 +1,43 @@
+.card-project {
+    padding: 20px ;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.3);
+    &:nth-child(odd){
+        margin-right: 30px;
+    }
+    margin-bottom: 40px;
+    
+}
+.card-project__img {
+    margin-bottom: 20px;
+    position: relative;
+   
+
+
+}
+.card-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.card-post__info {
+    width: 499px;
+    & p {
+        margin: 0;
+        font-family: 'Playfair Display', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+.portfolio-cards {
+    display:flex;
+    flex-wrap: wrap;
+}
+.col-12 {
+    padding-left: 0;
+}
+
+
+

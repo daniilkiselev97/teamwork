@@ -1,0 +1,35 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Аватарка маленькая';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Пагинация кнопок
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+       +post-button('Назад', 'Вперед')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +post-button(prev, next)
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/post-button.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin post-button(prev, next)
+                .btn-group
+                    a(class="button" href= link)&attributes(attributes) #{prev}
+                    a(class="button" href= link)&attributes(attributes) #{next}

@@ -1,0 +1,72 @@
+.comment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    border: 1px solid #7E9BBD;
+    border-radius: 6px;
+}
+.comment__img {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #C4C4C4;
+    overflow: hidden;
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+}
+.comment__wrapper{
+
+} 
+.comment__main-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+
+} 
+.comment__name {
+    margin-right: 32px;
+    & h4{
+        margin: 0;
+        font-family: $baseFont;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+}
+.comment__date  {
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        left: -20px;
+        width: 16px;
+        height: 16px;
+        background-image: url('./../img/comment/clock.svg');
+
+    }
+    & span {
+        font-family: $baseFont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #7E9BBD;
+    }
+}
+.comment__description {
+    & p{
+        margin: 0;
+        font-family: $baseFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #000000;
+    }
+
+}

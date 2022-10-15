@@ -1,3 +1,49 @@
 {
-    "siteName": "Gulp ultimate 2020"
+    "siteName": "Gulp ultimate 2020",
+    "portfolioCards" : [
+        {
+            "img" : "card-1.jpg",
+            "description" : "Архитектурное бюро John Doe и партнеры. Сайт под ключ",
+            "title " : "HTML, CSS, wordpress"
+        },
+        {
+            "img" : "card-2.jpg",
+            "description" : "Сайт о спасении черепах и морской фауны. Верстка и frontend",
+            "title " : "HTML, CSS, JS, React"
+        },
+        {
+            "img" : "card-3.jpg",
+            "description" : "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "title " : "Figma, HTML, CSS, PHP"
+        },
+        {
+            "img" : "card-4.jpg",
+            "description" : "Верстка сайта для газеты “Вечерний Лондон”",
+            "title " : "HTML, CSS, wordpress"
+        },
+        {
+            "img" : "card-5.jpg",
+            "description" : "Архитектурное бюро John Doe и партнеры. Сайт под ключ",
+            "title " : "HTML, CSS, wordpress"
+        },
+        {
+            "img" : "card-6.jpg",
+            "description" : "Сайт о спасении черепах и морской фуны. Верстка и frontend",
+            "title " : "HTML, CSS, JS, React"
+        },
+        {
+            "img" : "card-7.jpg",
+            "description" : "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "title " : "Figma, HTML, CSS, PHP"
+        },
+        {
+            "img" : "card-8.jpg",
+            "description" : "Верстка сайта для газеты “Вечерний Лондон”",
+            "title " : "HTML, CSS, wordpress"
+        }
+      
+
+      
+
+    ]
 }

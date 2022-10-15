@@ -1,0 +1,42 @@
+.footer-section{
+    height: 220px;
+    padding-top: 40px;
+    background-color: #000;
+
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+.footer__cooperation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: $baseFont;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #fff;
+
+}
+.footer__name {
+    margin-bottom: 15px;
+
+}
+.footer__info{
+    & p{
+        margin: 0;
+    }
+}
+
+
+
+.footer__icons{
+    display: flex;
+}
+
+.footer__icon {
+    margin-right: 30px;
+
+}
+

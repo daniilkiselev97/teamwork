@@ -1,0 +1,10 @@
+mixin leave-comment(img)
+    .leave-comment 
+        .leave-comment__img 
+            img(src="./../img/leave-comment/" + img, alt="Комментарий")
+        .leave-comment__wrapper 
+            .leave-comment__wrapper-form 
+                form(action="#")
+                    input(type="text" placeholder='Введите ваш комментарий...').form-field 
+            +main-button('Комментировать')
+            

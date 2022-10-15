@@ -1,0 +1,36 @@
+.main-button {
+    display: inline-block;
+    line-height: 1;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+
+    border-radius: 6px;
+    background-color: #000000;
+
+    padding: 13px 20px;
+
+    color: #ffffff;
+    font-family: $baseFont;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+
+    &:hover,
+    &:focus {
+        background-color: #7E9BBD;
+        text-decoration: none;
+        color: #ffffff;
+        outline: none;
+        border: none;
+    }
+
+    &:active {
+        background-color: #49525B;
+        text-decoration: none;
+        color: #ffffff;
+        border: 0px;
+        outline: none;
+    }
+}

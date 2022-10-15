@@ -1,0 +1,22 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Портфолио';
+	- var pageClass= "";
+
+block content
+	include ./../sections/head-inner.pug
+
+	.container 
+		.row 
+			.col-12.text-center.pt-60.pb-90 
+				+main-title('Портфолио')
+				
+			.portfolio-cards
+				each card in jsonData.portfolioCards 
+					+cards-project( card.img, card.description, card.title )
+
+
+	include ./../sections/footer-section.pug
+	
