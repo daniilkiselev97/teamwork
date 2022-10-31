@@ -1,0 +1,53 @@
+.notification{
+    width: 807px;
+    padding: 14px 20px;
+    border-radius: 6px;
+    &.notification--red {
+        background-color: #DD4E55;
+    }
+    &.notification--yellow {
+        background-color: #F2E09F;
+    }
+    &.notification--green {
+        background-color: #61D392;
+    }
+}
+
+
+.notification__text {
+    font-size: 16px;
+    line-height: 21px;
+    &.notification__text--white {
+        color: #fff;
+    }
+    &.notification__text--black {
+        color: #000;
+    }
+}
+.notification__wrap {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 807px;
+    padding: 20px;
+    background-color: #EAEFF2;
+    & p {
+        margin: 0;
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+    }}
+.ui-kit__component-demo.column{
+    flex-direction: column;
+}
+
+
+    
+
+
+
+
+

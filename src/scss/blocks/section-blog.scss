@@ -1,0 +1,8 @@
+.blog-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-cards >.card-post {
+    margin-right: 30px;
+    margin-bottom: 40px;
+}

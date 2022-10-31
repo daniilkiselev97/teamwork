@@ -1,0 +1,36 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Сообщение об успехе';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Сообщение об успехе
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+       +notification-green()
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +notification-green()
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/notification-green.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin notification-green (text='Сообщение об успхе')
+                .notification.notification--green 
+                    .notification__text.notification__text--white #{text}
+            block
+

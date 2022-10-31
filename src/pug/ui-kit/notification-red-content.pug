@@ -1,0 +1,38 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Сообщение об ошибке';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Сообщение об ошибке
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo.column
+        +notification-red()
+            .notification__wrap 
+                p Здесь будет текст ошибки. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur in eget turpis sit maecenas in diam scelerisque habitant.
+                p Возможно на 2 абзаца. Turpis rhoncus, sed imperdiet sodales suspendisse eget. Viverra tortor id vitae venenatis non cras in maecenas tincidunt. Quam quisque cras faucibus quisque amet.
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +notification-red()
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/notification-red-content.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin notification--red (text='Сообщение об ошибке')
+                .notification.notification--red 
+                    .notification__text.notification__text--white Сообщение об ошибке
+            block

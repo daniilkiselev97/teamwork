@@ -2,21 +2,21 @@ extends ../layouts/page-layout.pug
 include ./../mixins/*.pug
 
 block variables
-	- var title = 'Портфолио';
+	- var title = 'Блог';
 	- var pageClass= "";
-	- var pageLink = 'portfolio.html'
+	- var pageLink = 'blog.html'
 
 block content
 	include ./../sections/head-ext.pug
 
 	.container 
 		.row 
-			.col-12.text-center.pt-60.pb-90 
-				+main-title('Портфолио')
+			.col-12.text-center.pt-60.pb-80 
+				+main-title('Блог')
 				
-			.portfolio-cards
-				each card in jsonData.portfolioCards 
-					+cards-project( card.title, card.img, card.description )
+			.blog-cards
+				each card in jsonData.blogCards 
+					+cards-post( card.img,card.description )
 			.portfolio__pagination
 				+button-pagination('назад',link='#!')
 				+button-pagination('1',link='#!')

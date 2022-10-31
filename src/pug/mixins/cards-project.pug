@@ -1,8 +1,8 @@
-mixin cards-project( img, info, link='#', title )
+mixin cards-project( tag = 'HTML, CSS, wordpress', img, info,  link= '#' )
     .card-project
         .card-project__img
             .card-frame
-                +cards-frame(title)
+                +cards-frame(tag)
             a(href=link)
                 img(src="./../img/project-cards/" + img, alt="Проект")
         .card-post__info 
