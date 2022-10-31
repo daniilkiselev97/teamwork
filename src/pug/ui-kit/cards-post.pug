@@ -1,0 +1,38 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Карточка с постом';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Карточка с постом
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+       +cards-post('card-1.jpg', 'Как я встретил старого друга в NY и чем это закончилось')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +cards-post( img, info, link='#')
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/cards-post.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin cards-post( img, info , link='#' )
+                .card-post
+                    .card-post-img 
+                        a(href=link)
+                            img(src="./img/post-cards/" + img, alt="Пост")
+                    .card-post__info 
+                        p #{info}

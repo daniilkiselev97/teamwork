@@ -1,0 +1,29 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Портфолио';
+	- var pageClass= "";
+	- var pageLink = 'portfolio.html'
+
+block content
+	include ./../sections/head-ext.pug
+
+	.container 
+		.row 
+			.col-12.text-center.pt-60.pb-90 
+				+main-title('Портфолио')
+				
+			.portfolio-cards
+				each card in jsonData.portfolioCards 
+					+cards-project( card.title, card.img, card.description )
+			.portfolio__pagination
+				+button-pagination('назад',link='#!')
+				+button-pagination('1',link='#!')
+				+button-pagination('2',link='#!')
+				+button-pagination('3',link='#!')
+				+button-pagination('вперед',link='#!')
+
+
+	include ./../sections/footer-section.pug
+	

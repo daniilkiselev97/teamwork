@@ -1,0 +1,32 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Шапка внешняя ';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Шапка внешняя
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        include ./../sections/head-ext.pug
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            incluide './../sections/head-ext.pug'
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        sections/head-ext.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            incluide './../sections/head-ext.pug'

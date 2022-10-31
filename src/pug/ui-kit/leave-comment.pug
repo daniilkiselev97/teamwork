@@ -1,0 +1,42 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Оставить комментарий';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Комментарий
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+       +leave-comment('/card-1.jpg')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +leave-comment(img)
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/leave-comment.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin leave-comment(img)
+                .leave-comment 
+                    .leave-comment__img 
+                        img(src="./../img/leave-comment/" + img, alt="Комментарий")
+                    .leave-comment__wrapper 
+                        .leave-comment__wrapper-form 
+                            form(action="#")
+                                input(type="text" placeholder='Введите ваш комментарий...').form-field 
+                    +main-button('Комментировать')
+        .card-post__info 
+            p #{info}

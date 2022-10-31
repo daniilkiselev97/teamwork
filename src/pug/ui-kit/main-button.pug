@@ -1,0 +1,33 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Главная кнопка
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        +main-button('Отправить')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +main-button('Отправить')
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/main-button.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin main-button(text="Отправить")
+                button.main-button #{text}

@@ -1,0 +1,29 @@
+extends ../layouts/page-layout.pug
+include ./../mixins/*.pug
+
+block variables
+	- var title = 'Блог';
+	- var pageClass= "";
+	- var pageLink = 'blog.html'
+
+block content
+	include ./../sections/head-ext.pug
+
+	.container 
+		.row 
+			.col-12.text-center.pt-60.pb-80 
+				+main-title('Блог')
+				
+			.blog-cards
+				each card in jsonData.blogCards 
+					+cards-post( card.img,card.description )
+			.portfolio__pagination
+				+button-pagination('назад',link='#!')
+				+button-pagination('1',link='#!')
+				+button-pagination('2',link='#!')
+				+button-pagination('3',link='#!')
+				+button-pagination('вперед',link='#!')
+
+
+	include ./../sections/footer-section.pug
+	

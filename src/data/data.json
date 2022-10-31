@@ -1,3 +1,103 @@
 {
-    "siteName": "Gulp ultimate 2020"
+    "siteName": "Gulp ultimate 2020",
+    "portfolioCards" : [
+        {   "title " : "HTML, CSS, wordpress",
+            "img" : "card-1.jpg",
+            "description" : "Архитектурное бюро John Doe и партнеры. Сайт под ключ"
+            
+        },
+        {
+            "img" : "card-2.jpg",
+            "description" : "Сайт о спасении черепах и морской фауны. Верстка и frontend",
+            "title " : "HTML, CSS, JS, React"
+        },
+        {
+            "img" : "card-3.jpg",
+            "description" : "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "title " : "Figma, HTML, CSS, PHP"
+        },
+        {
+            "img" : "card-4.jpg",
+            "description" : "Верстка сайта для газеты “Вечерний Лондон”",
+            "title " : "HTML, CSS, wordpress"
+        },
+        {
+            "img" : "card-5.jpg",
+            "description" : "Архитектурное бюро John Doe и партнеры. Сайт под ключ",
+            "title " : "HTML, CSS, wordpress"
+        },
+        {
+            "img" : "card-6.jpg",
+            "description" : "Сайт о спасении черепах и морской фуны. Верстка и frontend",
+            "title " : "HTML, CSS, JS, React"
+        },
+        {
+            "img" : "card-7.jpg",
+            "description" : "Квадрокоптер Phantom от Dji company. Сайт под ключ",
+            "title " : "Figma, HTML, CSS, PHP"
+        },
+        {
+            "img" : "card-8.jpg",
+            "description" : "Верстка сайта для газеты “Вечерний Лондон”",
+            "title " : "HTML, CSS, wordpress"
+        }
+      
+      
+
+    ],
+    "blogCards" : [
+        { 
+            "img" : "card-1.jpg",
+            "description" : "Как я встретил старого друга в NY и чем это закончилось"
+            
+        },
+        {
+            "img" : "card-2.jpg",
+            "description" : "Парусный спорт. 10 правил для начинающего"
+        },
+        {
+            "img" : "card-3.jpg",
+            "description" : "Мое рабочее место и аксессуары в 2020 году"
+        },
+        {
+            "img" : "card-4.jpg",
+            "description" : "Весна в моем городе"
+        },
+        {
+            "img" : "card-5.jpg",
+            "description" : "10 инструментов для продуктивности за ноутбуком"
+        },
+        {
+            "img" : "card-6.jpg",
+            "description" : "Мои топ 10 треков с радио за 2019 год"
+        },
+        {
+            "img" : "card-7.jpg",
+            "description" : "Аксессуары которые я всегда беру с собой"
+        },
+        {
+            "img" : "card-8.jpg",
+            "description" : "Фотосессия. Сентябрь 2019"
+        },
+        {
+            "img" : "card-9.jpg",
+            "description" : "Обзор коворкингов в МСК"
+        },
+        {
+            "img" : "card-10.jpg",
+            "description" : "Как устроена подземка в NY. Плюсы и минусы"
+        },
+        {
+            "img" : "card-11.jpg",
+            "description" : "Летние воспоминания. Трекинг поход по Кавказским горам"
+        },
+        {
+            "img" : "card-12.jpg",
+            "description" : "Купил дрон. Впечатления и фотосессия "
+        }
+      
+      
+
+    ]
+
 }

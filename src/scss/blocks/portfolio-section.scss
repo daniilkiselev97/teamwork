@@ -1,0 +1,12 @@
+.portfolio__pagination {
+    display: flex;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.portfolio__pagination > * {
+    margin-right: 15px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
